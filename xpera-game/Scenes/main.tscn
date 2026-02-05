@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://3ku576k2a0yy"]
 
-[ext_resource type="PackedScene" path="res://Assets/Controller/proto_controller.tscn" id="1_jjgbg"]
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://Assets/Controller/proto_controller.tscn" id="1_jjgbg"]
+[ext_resource type="PackedScene" uid="uid://bykvcwuhu5kir" path="res://Assets/World/all_fences/Fences/plaster_wall/plaster_wall.fbx" id="2_bo1nx"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_jjgbg"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -36,3 +37,6 @@ input_right = "move_right"
 input_forward = "move_forward"
 input_back = "move_backward"
 input_jump = "move_jump"
+
+[node name="plaster_wall" parent="." unique_id=582853468 instance=ExtResource("2_bo1nx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.7372155, 0.5, 5.6757073)
